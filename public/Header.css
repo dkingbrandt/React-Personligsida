@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+    /* background-image: url("https://cdn.pixabay.com/photo/2015/09/06/01/00/surfing-926822_1280.jpg"); */
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 10%;
+}
+
+
+li {
+    display: inline;
+    list-style-type: none;
+   
+    font-size: 100%;
+    padding: 4%;
+   
+    
+
+  }
+
+  
+  
+  .Link {
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    
+  }
+  
+  .currentPage {
+    text-decoration: underline;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  
+  
+  header {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+     background-color: rgb(236, 213, 160);
+    height: 100px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    align-items: center;
+  }
+  
+  footer {
+    position: absolute;
+    text-align: center;
+    background-color: rgb(236, 213, 160);
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    
+
+  }
+
+   .pContainer,
+   .pContainerHome{
+     z-index: 1;
+     position: absolute;
+     border-radius: 30px;
+      margin-right: 40px;
+      background-color: rgba(248, 245, 245,0.3);
+      width: 500px;
+      height:auto;
+      color:white;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      font-size: large;
+      padding-top: 20px;
+      margin-left: 50px;
+      margin-top: 60px;
+  } 
+ 
+  
+  .pContainerPrice{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+   
+   
+    
+     margin-top: 100px;
+     width: 1268px;
+     height: auto;
+     padding-left: 10px;
+     
+
+    
+   
+    background-color:rgba(248, 245, 245,0.6);
+    z-index: 1;
+    position: absolute;
+   
+    
+     
+
+  }
+  
+  
+  
+  .pContainerOcean{
+    background-color:rgba(248, 245, 245,0.6);
+    z-index: 1;
+    position: absolute;
+    border-radius: 30px;
+     margin-right: 40px;
+     
+     width: 600px;
+     height: auto;
+     color: black;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: bold;
+     font-size: large;
+     padding-top: 20px;
+     padding-left: 20px;
+     margin-left: 50px;
+     margin-top: 60px; 
+  }
+  .contactBox{
+    background-color:rgba(248, 245, 245,0.3);
+    z-index: 1;
+    position: absolute;
+    border-radius: 30px;
+     margin-right: 40px;
+     
+     width: 500px;
+     height: auto;
+     color: white;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: bold;
+     font-size: large;
+     padding-top: 20px;
+     margin-left: 700px;
+     margin-top: 450px; 
+  }
+  
+   .homeContainer,
+   .contactContainer,
+   .oceanContainer,
+   .priceContainer{
+     position: relative;
+    
+   }
+
+   
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items:center;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    position: relative;
+    padding-left: 20px;
+    
+    
+    background-color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+   
+    
+    height: 380px;
+    width: 300px;
+    
+    box-shadow: 0 2px 5px #ccc;
+    text-align: left;
+  }
+  
+  .top {
+    border-radius: 25px 25px 0 0;
+    height: 100px;
+    width: 100%;
+    background-color:rgb(236, 213, 160);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+  
+  .name {
+    
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #2d3436;
+    display: flex;
+    flex: 1;
+    margin: 10% 20px 0;
+  }
+
+  .bottom {
+    margin-top: 100px;
+  }
+  
+  .info {
+    margin: 20px 0;
+    color: #2d3436;
+  }
+
+  
+  
+  .bonfireIcon,
+  .fistEmoji{
+   position: absolute;
+   left: 75%;
+   top: 40%
+   
+  }
+  .fistEmoji:hover{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.158) , 0 0 25px beige, 0 0 5px black;
+  }
+
+  .hangEmoji{
+    animation-name: hangloose-animation;
+    animation-duration: 2.5s;        
+    transform-origin: 70% 70%;
+    animation-iteration-count: 10s;      
+    display: inline-block;
+    position: absolute;
+    left: 75%;
+    top: 40%
+  }
+
+ 
+  
+
+  @keyframes hangloose-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) } 
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+  .hanglooseParagraph,
+  .fistParagraph{
+    position: absolute;
+   left: 75%;
+   top: 35%;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+   font-size: large;
+   color: yellow;
+
+  }
+
+  .ShakaParagraph{
+    position: absolute;
+    left: 75%;
+    top: 55%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+    color: yellow;
+ 
+
+  }
+
+  .bonfireIcon:hover{
+   
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.158) , 0 0 25px beige, 0 0 5px black;
+}

@@ -1,10 +1,13 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {Link} from 'react-router-dom'
 import Dan from './img/Dan.png'
+import Fist from './img/Fist.png'
+import Hangloose from './img/Hangloose.png'
 import Footer from './footer'
 
 
 const Home =()=>{
+    const [toggle, setToggle] = useState(false)
     return (
         <div className='homeContainer'>
             <header>
@@ -16,11 +19,11 @@ const Home =()=>{
                 </li>
                 
                 <li>
-                    <Link  className="Link" to="/competition">Tävlingar</Link>
+                    <Link  className="Link" to="/price">Prislista</Link>
                 </li>
                 
                 <li>
-                    <Link  className="Link" to="/heart">Hjärtat</Link>
+                    <Link  className="Link" to="/ocean">Havet</Link>
                 </li>
             
                 <li>
@@ -55,7 +58,26 @@ const Home =()=>{
             Ett mål att få dela med mej av den skönhet och upplevelse surfing har att ge och visa hur vackert havet är.
            
           </p>
-        </div>
+        </div>{toggle === false ?(
+            <>
+                <p className='fistParagraph'>FIST BUMP ME !</p>
+                <img src={Fist} className="fistEmoji" onClick={() => setToggle(true)}/>
+            </>
+        ):(
+            <div>
+            <p className='hanglooseParagraph'>HANG LOOSE !</p>
+            <img className='hangEmoji' src={Hangloose} />
+            
+            <p className='ShakaParagraph'>Hang loose also called the Shaka Sign
+            <br></br>
+             is an expression that conveys the "Aloha Spirit",
+            <br></br>
+             a concept of friendship, understanding, compassion, and solidarity </p>
+           
+       </div>
+      
+       
+       )}
 
             <img src="https://cdn.pixabay.com/photo/2019/02/15/20/15/surfing-3999232_1280.jpg" alt="surferdude" />
             <Footer/>
